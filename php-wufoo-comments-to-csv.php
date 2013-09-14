@@ -47,8 +47,8 @@ echo "Total comments to process: $comment_count\n";
 
 /* Get comment data as JSON string
    NOTE: Since comments are returned in a limited page size,
-	 this steps through by PAGE_SIZE entries, creating one
-	 string of the JSON data as a single ordered array ($res_json)
+   this steps through by PAGE_SIZE entries, creating one
+   string of the JSON data as a single ordered array ($res_json)
 */
 $res_json = "";
 for ($page = 0; $page <= $comment_count; $page += PAGE_SIZE)
@@ -65,7 +65,7 @@ for ($page = 0; $page <= $comment_count; $page += PAGE_SIZE)
   $res_stat = curl_getinfo ($curl);
   if ($res_stat['http_code'] != 200)
     {
-	 echo "ERROR: Code " . $res_stat['http_code'] . " fetching comment page $page.\n";
+   echo "ERROR: Code " . $res_stat['http_code'] . " fetching comment page $page.\n";
     exit();
     }
 
