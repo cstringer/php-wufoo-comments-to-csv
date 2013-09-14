@@ -65,7 +65,7 @@ for ($page = 0; $page <= $comment_count; $page += PAGE_SIZE)
   $res_stat = curl_getinfo ($curl);
   if ($res_stat['http_code'] != 200)
     {
-   echo "ERROR: Code " . $res_stat['http_code'] . " fetching comment page $page.\n";
+    echo "ERROR: Code " . $res_stat['http_code'] . " fetching comment page $page.\n";
     exit();
     }
 
