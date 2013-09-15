@@ -1,7 +1,7 @@
 <?php
 /***
- php-wufoo-comments-to-csv.php - Create CSV of Wufoo form comments
- $ rev 1.0.6, 2013-09-14 11:16, cstringer42@gmail.com $
+ * php-wufoo-comments-to-csv.php - Create CSV of Wufoo form comments
+ * $ rev 1.0.6, 2013-09-14 11:16, cstringer42@gmail.com $
  */
 define ("PAGE_SIZE", 100);
 define ("URL_BASE",  'https://[YOURSITE].wufoo.com/api/v3/forms');
